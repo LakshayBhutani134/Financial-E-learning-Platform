@@ -3,9 +3,9 @@ import Navbar from './components/Navbar';
 import {  BrowserRouter as Router,  Routes,  Route} from "react-router-dom"
 import './App.css';
 import Home from './components/pages/Home';
-import Services from './components/pages/Services';
+import Courses from './components/pages/Courses';
 import SignUp from './components/pages/SignUp';
-import About from './components/pages/About';
+import Invest from './components/pages/Invest';
 function App() {
   return (
     <>
@@ -13,9 +13,9 @@ function App() {
       <Navbar/>
       <Routes>
       <Route path='/' exact element={ <Home />}></Route>
-      <Route path='/services' exact element={ <Services />}></Route>
+      <Route path='/courses' exact element={ <Courses />}></Route>
       <Route path='/sign-up' exact element={ <SignUp />}></Route>
-      <Route path='/about' exact element={ <About />}></Route>
+      <Route path='/Invest' exact element={ <Invest />}></Route>
       </Routes>
     </Router>
     </>
