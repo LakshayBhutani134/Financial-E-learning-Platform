@@ -12,13 +12,13 @@ function Cards() {
                     src="/img-home.jpg"
                     text="Hello"
                     label='Adventure'
-                    path='/services'
+                    path='/courses'
                     />
                     <CardItem 
                     src="/img-8.jpg"
                     text="Hello"
                     label='Luxury'
-                    path='/services'
+                    path='/courses'
                     />
                 </ul>
                 <ul className='cards__items'>
@@ -26,13 +26,13 @@ function Cards() {
                     src="/img-1.jpg"
                     text="Hello"
                     label='Mystery'
-                    path='/services'
+                    path='/courses'
                     />
                     <CardItem 
                     src="/img-2.jpg"
                     text="Hello"
                     label='Adrenaline'
-                    path='/services'
+                    path='/courses'
                     />
                 </ul>
             </div>
