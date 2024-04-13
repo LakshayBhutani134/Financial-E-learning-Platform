@@ -44,8 +44,8 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
-                <Link to='/Invest' className='nav-links' onClick={closeMobileMenu}>
-                  Invest
+                <Link to='/chatbot' className='nav-links' onClick={closeMobileMenu}>
+                  Ai-ChatBot
                 </Link>
               </li>
               <li className='nav-item'>
