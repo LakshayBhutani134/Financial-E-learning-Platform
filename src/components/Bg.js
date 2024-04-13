@@ -7,11 +7,11 @@ function Bg() {
   return (
     <div className='Bg-container'>
       <video src="video-2.mp4" autoPlay loop muted />
-      <h1>Adventure Awaits</h1>
+      <h1>Paisa, Planning aur Paathshaala</h1>
       <p>What are you waiting for?</p>
       <div className='Bg-btns'>
         <Button 
-        className='btns' 
+        className='btn22' 
         buttonStyle='btn--outline'
         buttonSize='btn--large'>
             GET STARTED
@@ -20,7 +20,7 @@ function Bg() {
         className='btns' 
         buttonStyle='btn--primary'
         buttonSize='btn--large'>
-            WATCH TRAILER <i className='far fa-play-circle'/>
+            SIGN UP
         </Button>
       </div>
     </div>
