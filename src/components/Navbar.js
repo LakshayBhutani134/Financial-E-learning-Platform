@@ -27,7 +27,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
             <Link href="#" className='navbar-logo' onClick={closeMobileMenu}>
-                TRVL <i className='fas fa-circle-notch'/>
+              RokdaRocket <i className="fas fa-rocket"></i>
             </Link> 
             <div className='menu-icon' onClick={handleClick}>
               <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
