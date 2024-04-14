@@ -6,6 +6,7 @@ import Home from './components/pages/Home';
 import Courses from './components/pages/Courses';
 import SignUp from './components/pages/SignUp';
 import ChatBot from './components/pages/ChatBot';
+import Quiz from './components/pages/Quiz';
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
       <Route path='/courses' exact element={ <Courses />}></Route>
       <Route path='/sign-up' exact element={ <SignUp />}></Route>
       <Route path='/chatbot' exact element={ <ChatBot />}></Route>
+      <Route path='/quiz' exact element={ <Quiz />}></Route>
       </Routes>
     </Router>
     </>

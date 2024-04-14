@@ -44,15 +44,16 @@ function Navbar() {
                 </Link>
               </li>
               <li className='nav-item'>
+                <Link to='/quiz' className='nav-links' onClick={closeMobileMenu}>
+                  Quiz
+                </Link>
+              </li>
+              <li className='nav-item'>
                 <Link to='/chatbot' className='nav-links' onClick={closeMobileMenu}>
                   Ai-ChatBot
                 </Link>
               </li>
-              <li className='nav-item'>
-                <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
-                  Sign up
-                </Link>
-              </li>
+              
               
             </ul>
             {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}           
