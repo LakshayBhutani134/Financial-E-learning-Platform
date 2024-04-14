@@ -4,35 +4,39 @@ const mysql = require('mysql');
 const cors = require('cors');
 
 const app = express();
-const port = 5000;
 
+app.use(express.json());
 app.use(cors());
 
+// Create connection to MySQL
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'kohli6639',
-  database: 'sample',
+  database: 'sample'
 });
 
+// Connect
 db.connect((err) => {
   if (err) {
     throw err;
   }
-  console.log('Connected to MySQL database');
+  console.log('MySQL connected');
 });
 
-app.get('/api/data', (req, res) => {
-  const query = 'SELECT * FROM stock_data';
-  db.query(query, (err, result) => {
+// Fetch data from MySQL
+app.get('/api/modules', (req, res) => {
+  const sql = 'SELECT * FROM modules';
+  db.query(sql, (err, result) => {
     if (err) {
-      res.status(500).json({ error: err.message });
-      return;
+      console.error('Error fetching modules:', err);
+      return res.status(500).json({ error: 'Internal server error' });
     }
+    console.log('Modules:', result); // Logging the result
     res.json(result);
   });
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// Start server
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
