@@ -1,0 +1,56 @@
+/* courses.css */
+
+/* Center the Modules heading */
+h1 {
+  text-align: center;
+  color: #6f42c1;
+}
+
+/* Style each module container */
+.module-container {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Style the module title */
+.module-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+
+/* Style the module description */
+.module-description {
+  margin-bottom: 10px;
+}
+
+/* Style the toggle button */
+.toggle-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Style the module content */
+.module-content {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style each chapter */
+.module-content li {
+  margin-bottom: 5px;
+}
+
+/* Style the images */
+.module-image {
+  max-width: 100%;
+  display: block;
+  margin-top: 10px;
+}
+
