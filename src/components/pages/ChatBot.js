@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../../App.css'
 
-const Invest = () => {
+const ChatBot = () => {
     const [data, setData] = useState([]);
   
     useEffect(() => {
@@ -56,4 +56,4 @@ const Invest = () => {
     );
   };
   
-  export default Invest;
+  export default ChatBot;
