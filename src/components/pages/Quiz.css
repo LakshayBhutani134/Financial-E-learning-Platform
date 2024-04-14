@@ -1,0 +1,37 @@
+.quiz-container {
+    text-align: center;
+  }
+  
+  .quiz-title {
+    margin-bottom: 20px;
+  }
+  
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  .question-text {
+    margin-bottom: 10px;
+  }
+  
+  .answer-options {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .option-button {
+    margin: 5px;
+    padding: 10px 20px;
+  }
+  
+  .submit-button {
+    margin-top: 20px;
+  }
+  
+  .score-text {
+    margin-top: 20px;
+  }
+  
+  .option-button.selected {
+    background-color: lightblue;
+  }
